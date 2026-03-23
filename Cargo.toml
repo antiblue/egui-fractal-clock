@@ -12,7 +12,7 @@ eframe = { version = "0.33", default-features = false, features = [
     "glow",          # Use the glow rendering backend. Alternative: "wgpu".
     "wayland",       # To support Linux (and CI)
 ] }
-chrono = "0.4.44"
+chrono = "0.4"
 
 [profile.release]
 opt-level = 3
@@ -24,7 +24,7 @@ codegen-units = 1
 [profile.dev.package."*"]
 opt-level = 3
 
-
+# Lints are from the eframe template (https://github.com/emilk/eframe_template)
 # ----------------------------------------------------------------------------------------
 # Lints:
 
